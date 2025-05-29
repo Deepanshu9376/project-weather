@@ -12,7 +12,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.get(`http://localhost:5000/api/weather?city=${city}`);
+      const res = await axios.get(`https://project-weather-6al3.onrender.com/api/weather?city=${city}`);
       setWeather(res.data);
     } catch (err) {
       setError('Failed to fetch weather data.');
